@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Code Music Player</title>
   </head>
   <body>
     <main>
       <div class="main-layout">
-        Main info
-        <div class="sidebar"></div>
-        <div class="source-full">
-          <div class="source-info"></div>
-          <div class="track-list"></div>
+        <ul class="sidebar">
+            <i class="material-icons md-36">home</i>
+            <i class="material-icons md-36">search</i>
+            <i class="material-icons md-36">library_music</i>
+            <i class="material-icons md-36">account_circle</i>
+            <i class="material-icons md-36">settings_applications</i>
+        </ul>
+        <div class="current-page">
+          <div class="source">
+            <img src="img/best-albums-2019.jpg" alt="best-albums-2019" />
+            <ul class="info">
+              <span>Best Albums of 2019</span>
+              <span>by Marcelo Paternostro</span>
+              <span>2019, 50 songs, 2 hours 35 minutes</span>
+              <span></span>
+            </div>
+            <div class="track-list">Track 1, track 2</div>
+          </div>
         </div>
       </div>
       <div class="song-tracker">Song currently playing</div>
