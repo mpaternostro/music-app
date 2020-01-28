@@ -15,11 +15,26 @@
     <main>
       <div class="main-layout">
         <ul class="sidebar">
+          <button>
             <i class="material-icons md-36">home</i>
+            <span>Home</span>
+          </button>  
+          <button>
             <i class="material-icons md-36">search</i>
+            <span>Search</span>
+          </button>
+          <button>
             <i class="material-icons md-36">library_music</i>
+            <span>Library</span>
+          </button>
+          <button>
             <i class="material-icons md-36">account_circle</i>
+            <span>Profile</span>
+          </button>
+          <button>
             <i class="material-icons md-36">settings_applications</i>
+            <span>Settings</span>
+          </button>
         </ul>
         <div class="current-page">
           <div class="source">
@@ -30,15 +45,15 @@
               <span class="details">2019, 50 songs, 2 hours 35 minutes</span>
               <ul class="source-options">
                 <button class="hoverable-button">
-                  <i class="material-icons md-36">shuffle</i>
+                  <i class="material-icons md-24">shuffle</i>
                   <span>Shuffle</span>
                 </button>
-                <button>
-                  <i class="material-icons md-36">add_to_queue</i>
+                <button class="hoverable-button">
+                  <i class="material-icons md-24">add_to_queue</i>
                   <span>Add to queue</span>
                 </button>
-                <button>
-                  <i class="material-icons md-36">more_horiz</i>
+                <button class="hoverable-button">
+                  <i class="material-icons md-24">more_horiz</i>
                   <span>More</span>
                 </button>
               </ul>
@@ -70,7 +85,7 @@
                 <i class="material-icons md-18">explicit</i>
               </li>
               <li>
-                <span class="song">One out of five</span><span>Artic Monkeys</span>
+                <span class="song">One out of five</span><span>Artic Donkeys</span>
                 <time>4:03</time>
                 <i class="material-icons md-18">explicit</i>
               </li>
@@ -89,8 +104,39 @@
         </div>
       </div>
       <div class="song-tracker">
-        <img src="img/best-albums-2019.jpg" alt="best-albums-2019">
-      </div>
+        <div class="song-info">
+          <img src="img/best-albums-2019.jpg" alt="best-albums-2019">
+          <div class="song">
+            <span>One out of five</span>
+            <span>Artic Donkeys</span>
+          </div>
+        </div>
+        <div class="track">
+          <div class="track-control">
+            <i class="material-icons md-24">shuffle</i>
+            <i class="material-icons md-36">skip_previous</i>
+            <i class="material-icons md-48">play_arrow</i>
+            <i class="material-icons md-36">skip_next</i>
+            <i class="material-icons md-24">repeat</i>
+          </div>
+          <div class="progress-bar">
+            <span>
+              <progress value="35" max="100"></progress>
+            </span>
+            <div class="time-elapsed">
+              <small>1:25</small>
+              <small>4:03</small>
+            </div>
+          </div>
+        </div>
+          <div class="volume-bar">
+            <i class="material-icons md-24">volume_down</i>
+            <div id="volume">
+              <div class="actual-volume"></div>
+              <span class="volume-fader"></span>
+            </div>
+            <i class="material-icons md-24">volume_up</i>
+          </div>
     </main>
   </body>
 </html>
